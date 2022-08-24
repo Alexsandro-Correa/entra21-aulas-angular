@@ -1,0 +1,23 @@
+<p>property works!</p>
+{{nome}}<br>
+{{sobrenome}}<br>
+{{idade}}<br>
+{{peso}}<br>
+{{maior}}<br>
+
+<!--Property binding-->
+<img [src]="enderecoImagem" alt="" [width]="padrao"> <br>
+<!--Consigo usar atributos criados com variáveis trazendo informações do ts usando o seletor dentro do [] e colocar a variável com aspas depois do = -->
+<img src="{{enderecoImagem}}" alt="" [width]="padrao"> <br>
+
+<a [href]="url" [target]="alvo">Google</a> <br>
+
+<table [class]="tabela">
+    <thead>
+        <th>Nome</th>
+        <th>Idade</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
