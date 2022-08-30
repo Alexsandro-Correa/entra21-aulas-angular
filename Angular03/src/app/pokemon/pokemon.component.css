@@ -1,0 +1,13 @@
+img {
+    width: 250px;
+    height: 380px;
+}
+
+.card-body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7aDxrv7Xw8Fo9vJLJaClscAD5oMo3YYy-_w&usqp=CAU");
+    color: rgb(209, 46, 46);
+    position: relative;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    padding-bottom: 22%;
+}

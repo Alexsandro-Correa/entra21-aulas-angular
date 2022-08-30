@@ -1,0 +1,13 @@
+img {
+    width: 220px;
+    height: 350px;
+}
+
+.card-body {
+    background-image: url("https://images4.alphacoders.com/607/607398.jpg");
+    color: rgb(153, 96, 30);
+    position: relative;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    padding-bottom: 22%;
+}

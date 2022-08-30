@@ -1,0 +1,13 @@
+img{
+    width: 220px;
+    height: 350px;
+}
+
+.card-body {
+    background-image: url("https://secure.static.tumblr.com/7fb641f96eef7a299b93469bce437a24/zswvvew/aQRnk9g5r/tumblr_static_tumblr_static_75j5qixfnm88g40wo0okggcwk_640.png");
+    color: rgb(255, 204, 37);
+    position: relative;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    padding-bottom: 22%;
+}
