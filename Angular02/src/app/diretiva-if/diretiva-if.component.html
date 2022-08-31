@@ -1,0 +1,27 @@
+<p>diretiva-if works!</p>
+
+<p *ngIf="true">Se true, está me vendo.</p>
+<!--*ngIf só mostra o conteudo quando for true-->
+<p *ngIf="false">Se true, está me vendo.</p>
+<!--Se for false, ele nem escreve o conteúdo-->
+
+<button class="btn btn-warning" (click)="alternar()">Alternar</button>
+
+<div *ngIf="aparece" class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">Card</div>
+    </div>
+  </div>
+</div>
+
+<input type="number" [(ngModel)]="idade" />
+
+<div *ngIf="maiorIdade()" class="row">
+  <div class="col">
+    <div class="card">
+      <div *ngIf="maiorIdade()" class="card-body">É maior de idade!</div>
+      <div *ngIf="!maiorIdade()" class="card-body">É menor de idade!</div>
+    </div>
+  </div>
+</div>
