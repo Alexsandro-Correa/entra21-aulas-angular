@@ -16,59 +16,11 @@
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a routerLink="vaiPagina" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Tabela</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="outro" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Outro</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="property" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Property</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="event" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Event</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="maoDupla" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Mão Dupla</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a [routerLink]="['/receber', 'Alexsandro', 24 , 'Lages']" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Receber Dados</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="enviar" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Enviar</p>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a routerLink="diretivaIf" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Diretiva If</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="diretivaFor" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Diretiva For</p>
+            <li *ngFor="let link of links">
+              <a [routerLink]="link.rota" class="nav-link">
+                <i [class]="link.cor"></i>
+                <p>{{link.textContent}}</p>
+                <!-- <p><font>{{link.textContent}}</font></p> -->
               </a>
             </li>
           </ul>

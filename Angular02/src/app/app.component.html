@@ -1,14 +1,19 @@
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
 
-    <app-header></app-header>
-    <app-menu></app-menu>
+    <app-header [hidden]="!seguranca.entrou"></app-header>
+    <app-menu [hidden]="!seguranca.entrou"></app-menu>
 
-    <div class="content-wrapper">
+    <!--Dentro dessa div estão as configurações que serão padrão para os componentes.-->
+    <div class="content-wrapper bg-light ">
       <section class="content">
         <div class="container-fluid">
           <div class="row">
-            <router-outlet></router-outlet>
+            <div class="col-lg-12">
+              <div class="card mt-5 p-4">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
           </div>
         </div>
       </section>
